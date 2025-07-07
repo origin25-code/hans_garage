@@ -29,8 +29,7 @@ jobs:
       - name: Run factbot.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          TELEGRAM_BOT_TOKEN: $
-          {{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DEBUG_CHAT_ID: ${{ secrets.DEBUG_CHAT_ID }}
         run: python factbot.py
